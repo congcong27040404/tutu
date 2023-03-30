@@ -62,33 +62,57 @@
     <footer>
       <p>Bản quyền © 2023 Tặng Mẹ Gierusalem tôn quý và nhân từ của chúng con</p>
       <p><a href="#">Liên hệ</a>0388811841</p>
-      <style>
-  .heart {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-  }
-  
-  .heart::before,
-  .heart::after {
-    content: "";
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    border-radius: 50% 50% 0 0;
-    position: absolute;
-    top: -50px;
-    transform: rotate(-45deg);
-  }
-  
-  .heart::after {
-    transform: rotate(45deg);
-    left: 50px;
-  }
-</style>
-
-<div class="heart"></div>
     </footer>
+  </body>
+</html>
+<html>
+  <head>
+    <title>Trái tim chuyển động</title>
+    <style>
+      .heart {
+        position: relative;
+        width: 100px;
+        height: 90px;
+      }
+      .heart:before,
+      .heart:after {
+        position: absolute;
+        content: "";
+        left: 50px;
+        top: 0;
+        width: 50px;
+        height: 80px;
+        background-color: red;
+        border-radius: 50px 50px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+      }
+      .heart:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+      .heart:hover:before,
+      .heart:hover:after {
+        background-color: pink;
+      }
+      .heart-beat {
+        animation: heartbeat 1s infinite;
+      }
+      @keyframes heartbeat {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heart heart-beat"></div>
   </body>
 </html>
