@@ -52,7 +52,7 @@
   </head>
   <body>
     <header>
-      <h1>WE LOVE !</h1>
+      <h1>WE LOVE YOU!</h1>
     </header>
     <main>
       <p>Mẹ là người tuyệt vời nhất trên đời với con. Con muốn gửi lời yêu thương đến mẹ trong ngày đặc biệt này.</p>
@@ -65,3 +65,30 @@
     </footer>
   </body>
 </html>
+<style>
+  .heart {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    top: -50px;
+    transform: rotate(-45deg);
+  }
+  
+  .heart::after {
+    transform: rotate(45deg);
+    left: 50px;
+  }
+</style>
+
+<div class="heart"></div>
