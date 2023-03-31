@@ -1,118 +1,45 @@
-
 <html>
   <head>
-    <title>Tặng Cha Mẹ</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
-
-      header {
-        background-color: pink;
-        text-align: center;
-        padding: 20px;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: 36px;
-        font-weight: normal;
-      }
-
-      main {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-
-      p {
-        font-size: 18px;
-        line-height: 1.5;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 20px auto;
-      }
-
-      footer {
-        background-color: pink;
-        text-align: center;
-        padding: 20px;
-      }
-
-      a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-      }
-    </style>
+    <title>Đăng kí học online</title>
   </head>
   <body>
     <header>
-      <h1>WE LOVE YOU!</h1>
+      <img src="https://tse1.mm.bing.net/th?id=OIP.0hkihbTEaZHd9RqF0MvOMwHaE8&pid=Api&P=0" alt="Logo">
+      <h1>Đăng kí học online</h1>
     </header>
     <main>
-      <p>Mẹ là người tuyệt vời nhất trên đời với con. Con muốn gửi lời yêu thương đến mẹ trong ngày đặc biệt này.</p>
-      <img src="https://wall.vn/wp-content/uploads/2019/11/hinh-anh-canh-dong-hoa-48.jpg" alt="Hình ảnh yêu thương" />
-      <p>Cảm tạ Cha Mẹ đã dành tất cả tình yêu thương cho chúng con. Con yêu cha mẹ!</p>
+      <section>
+        <h2>Mô tả khóa học</h2>
+        <p>-Khóa học tư duy thành công-bí mật hạnh phúc.</p>
+		<p>-KHóa học này giúp bạn có thể biết được dòng chảy quá khứ-hiện tại-tương lai.</p>
+		<p>-Giúp bạn thay đổi tư duy tích cực và cuộc sống của bạn.</p>
+      </section>
+      <section>
+        <h2>Thông tin đăng kí</h2>
+        <form>
+          <label for="name">Họ và tên:</label><br>
+          <input type="text" id="name" name="name"><br>
+
+          <label for="email">Địa chỉ email:</label><br>
+          <input type="email" id="email" name="email"><br>
+
+          <label for="course">Khóa học:</label><br>
+          <select id="course" name="course">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+          </select><br>
+
+          <label for="time">Thời gian học:</label><br>
+          <input type="date" id="time" name="time"><br>
+
+          <input type="submit" value="Đăng kí">
+        </form>
+      </section>
     </main>
     <footer>
-      <p>Bản quyền © 2023 Tặng Mẹ Gierusalem tôn quý và nhân từ của chúng con</p>
-      <p><a href="#">Liên hệ</a>0388811841</p>
+      <p>&copy; 2023 Đăng kí học online. All rights reserved.</p>
     </footer>
-  </body>
-</html>
-<html>
-  <head>
-    <title>Trái tim chuyển động</title>
-    <style>
-      .heart {
-        position: relative;
-        width: 100px;
-        height: 90px;
-      }
-      .heart:before,
-      .heart:after {
-        position: absolute;
-        content: "";
-        left: 50px;
-        top: 0;
-        width: 50px;
-        height: 80px;
-        background-color: red;
-        border-radius: 50px 50px 0 0;
-        transform: rotate(-45deg);
-        transform-origin: 0 100%;
-      }
-      .heart:after {
-        left: 0;
-        transform: rotate(45deg);
-        transform-origin: 100% 100%;
-      }
-      .heart:hover:before,
-      .heart:hover:after {
-        background-color: pink;
-      }
-      .heart-beat {
-        animation: heartbeat 1s infinite;
-      }
-      @keyframes heartbeat {
-        0% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.2);
-        }
-        100% {
-          transform: scale(1);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="heart heart-beat"></div>
   </body>
 </html>
